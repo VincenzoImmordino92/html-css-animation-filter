@@ -22,3 +22,116 @@
   border-radius: 50%;
 }
 
+.ex-4-square{
+  transition: opacity 0.8s;
+}
+
+.ex-4-square:hover{
+  opacity: 0;
+}
+
+.ex-5-square{
+  transition: 1s;
+}
+
+.ex-5-square:hover{
+  transform:scale(2);
+}
+
+.ex-5-square:active{
+  transform: scale(0.5);
+}
+
+.ex-6-img{
+  transition:filter 0.8s ;
+}
+
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+
+.ex-7-img{
+  transition: all 1s;
+}
+
+.ex-7-img:hover{
+  filter: grayscale(80%);
+  filter: sepia(70%);
+}
+
+.ex-8-img{
+  transition: all 1s linear;
+}
+
+.ex-8-img:hover{
+  filter: sepia(80%) grayscale(30%);
+  border-radius: 20px;
+}
+
+.ex-9-img{
+  transition: all 1s linear;
+}
+
+.ex-9-img:hover{
+  filter: sepia(90%) grayscale(30%);
+  border-radius: 20px;
+  scale: 1.5;
+}
+
+.ex-10-icon{
+  animation: linear;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {
+   transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+   
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75%{
+    transform: rotate(270deg);
+  }
+  
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+
+:hover.ex-11-icon{
+  animation: retro 2s linear;
+}
+
+
+@keyframes retro{
+  
+0%{
+  transform: rotate(0deg);
+}
+
+25%{
+   transform: rotate(90deg);
+}
+
+50%{
+  transform: rotate(180deg);
+}
+
+75%{
+  transform: rotate(300deg)
+}
+100%{
+   animation: reverse 0.2s linear;
+}
+}
